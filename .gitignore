@@ -1,0 +1,18 @@
+# Ignore dependencies of npm and Composer:
+/node_modules
+/vendor
+
+# Ignore Javascript files
+*.min.js
+
+# Ignore generated CSS files
+
+# Ignore the generated zip file:
+one-wholearth-game.zip
+
+# Ignore .DS_Store files from MacOS:
+.DS_Store
+
+# Ignore Emacs artifacts
+
+*~
