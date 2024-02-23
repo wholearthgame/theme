@@ -29,15 +29,12 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
+			?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+
+
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
+;
 			$one_wholearth_game_description = get_bloginfo( 'description', 'display' );
 			if ( $one_wholearth_game_description || is_customize_preview() ) :
 				?>
@@ -46,7 +43,13 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'one-wholearth-game' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<svg viewBox="0 0 100 80" width="40" height="40">
+  <rect width="100" height="20"></rect>
+  <rect y="30" width="100" height="20"></rect>
+  <rect y="60" width="100" height="20"></rect>
+</svg>
+			</button>
 			<?php
 			wp_nav_menu(
 				array(

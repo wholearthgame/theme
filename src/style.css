@@ -22,6 +22,7 @@ body {
     @apply justify-around my-5;
 }
 
+
 .site-branding {
     @apply mx-auto mb-5;
 
@@ -41,6 +42,44 @@ body {
     @apply snap-center;
 }
 
+
+.menu-toggle {
+    @apply sm:hidden;
+
+}
+
+.saying {
+    @apply bg-violet-900 text-violet-100 text-center leading-normal py-5;
+}
+
+
+
+.cinematic {
+
+    @apply w-full;
+}
+
+.cinematic video {
+
+    @apply w-full;
+}
+
 /*.page .entry-title {
 
 }*/
+
+
+/* Accessibility */
+
+.screen-reader-text {
+    display: none;
+}
+
+
+@media speech {
+    .screen-reader-text {
+	display: block;
+
+    }
+
+}

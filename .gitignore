@@ -14,5 +14,7 @@ one-wholearth-game.zip
 .DS_Store
 
 # Ignore Emacs artifacts
-
+.dist
 *~
+*#
+.#header.php

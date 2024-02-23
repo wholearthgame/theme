@@ -177,3 +177,34 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Custom shortcodes
+ */
+
+
+/*function wholearth_blockquote($atts, $content) {
+    return '<div class="span3 quote well">'.PHP_EOL
+        .'<blockquote class="lead"'.$content.'</blockquote>'.PHP_EOL
+	.'<div>';
+}
+
+add_shortcode('wholearth_blockquote', 'wholearth_blockquote');
+
+
+
+function add_blockquote_quicktag() {
+?>
+    <script type="text/javascript">
+    QTags.addButton( 'wholearth_blockquote', 'B', '[wholearth_blockquote]', '[/wholearth_blockquote]', 'B', 'Wholearth blockquote', 1 );
+    </script>
+<?php
+}
+add_action( 'admin_print_footer_scripts', 'add_blockquote_quicktag' );
+*/
+
+function wholearth_blockquote ($atts, $content, $shortcode_tag) {
+    return "<p>hello $content.</p>";
+
+}
+
+add_shortcode ('wholearth_blockquote', 'wholearth_blockquote');

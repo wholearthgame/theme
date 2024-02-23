@@ -11,12 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title text-[8.5vw] py-10 bg-violet-100 text-violet-900">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php one_wholearth_game_post_thumbnail(); ?>
 
-	<div class="entry-content snap-mandatory snap-y overflow-y-scroll">
+	<div class="entry-content snap-mandatory snap-y overflow-y-scroll mt-0">
 		<?php
 		the_content();
 
